@@ -6,11 +6,14 @@
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 // registerServiceWorker();
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const priComponente = function(){
-    return React.createElement('div',null, 'hello world');
-}
+const PriComponente = () => (
+<div className="text-center">
+    hola mundo
+</div>
+);
 
-ReactDOM.render(React.createElement(priComponente,null,null),document.getElementById('root'));
+ReactDOM.render(<PriComponente />, document.getElementById('root'));
