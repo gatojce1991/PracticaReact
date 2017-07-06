@@ -19,8 +19,12 @@ import React from 'react';
                type="text" 
                value={props.value2} 
                onChange={props.onChange2}
-               />   
-            </div>
+               /> 
+               <button 
+               value={props.value3}>Ingresar
+               </button> 
+               
+               </div>
         );
 
 export default ContactoForm;

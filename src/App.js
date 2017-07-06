@@ -12,6 +12,7 @@ constructor(props){
     Nombre:'',
     Apellido:'',
     Telefono:'',
+    Ingresar:'',
   };
 }
 
@@ -44,6 +45,13 @@ handleTelefonoChange=(event) =>{
 
 }
 
+
+handleIngresarChange=(event) =>{
+  this.setState({
+    Ingresar: event.target.value
+  });
+
+}
   render() {
     return (
      <div>
@@ -58,10 +66,11 @@ handleTelefonoChange=(event) =>{
           <h3>Nuevo Contacto</h3>
           <ContactoForm value={this.state.Nombre}
            onChange={this.handleNombreChange}
-            value1={this.state.Apellido}
-           onChange1={this.handleApellidoChange}
-           value2={this.state.Telefono}
-           onChange2={this.handleTelefonoChange}/>
+          value1={this.state.Apellido}
+          onChange1={this.handleApellidoChange}
+          value2={this.state.Telefono}
+          onChange2={this.handleTelefonoChange}
+          value3={this.state.Ingresar}/>
         </div>
         </div>
       </div>
