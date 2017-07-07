@@ -2,7 +2,7 @@ import React from 'react';
 
          const Footer = (props) => (
              <div>
-            <footer>{props.copyrigth}</footer>
+            <footer className="text-center">{props.copyrigth}</footer>
             </div>
         );
 
